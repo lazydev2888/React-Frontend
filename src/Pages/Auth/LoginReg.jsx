@@ -1,8 +1,9 @@
-import { Grid, Card,  Tabs, Tab, Box  } from '@mui/material'
+import { Grid, Card,  Tabs, Tab, Box, Typography  } from '@mui/material'
 import Pic1 from "../../images/Pic1.svg"
 import React, { useState } from 'react'
 import UserLogin from './UserLogin';
 import UserRegistration from './UserRegistration';
+import { ShoppingBag } from '@mui/icons-material';
 
 
 
@@ -41,7 +42,7 @@ const LoginReg = () => {
         </Grid>
         <Grid item lg={6}  sm={7} xs={12} >
          <Card sx={{width : '100%', height: '100%'}} > 
-         <Box>
+         <Box sx={{mx:3 ,  height:530}}>
                 <Box sx={{borderBottom: 1, borderColor : 'divider' }}>
                     <Tabs value={value} textColor='secondary' indicatorColor='secondary' onChange={handleChange} >
                         <Tab label='Login' sx={{textTransform: 'none', fontWeight: "bold" }}></Tab>
@@ -52,6 +53,11 @@ const LoginReg = () => {
                 <UserLogin/>
                 </TabPanel>
                 <TabPanel value={value} index={1}> <UserRegistration /> </TabPanel>
+         </Box>
+         <Box textAlign='center' sx={{mt: 2}}>
+            <ShoppingBag sx={{color:'purple', fontSize:100}} />
+            <Typography variant='h5' sx={{ fontWeight: 'bold'}}
+            >Lazy-Dev</Typography>
          </Box>
          </Card>
         </Grid>

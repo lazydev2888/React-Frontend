@@ -20,8 +20,12 @@ const UserLogin = () => {
         if(actualData.email && actualData.password){
             console.log(actualData);
             document.getElementById('LoginForm').reset()
-            setError({status:true, msg: "Login Successfull", type:'success'})
-            navigate('/dashboard')
+            setError({status:true, msg: "Login Successfull Please wait Redirecting to Login Page....", type:'success'})
+            setTimeout(()=>{
+                navigate("/dashboard")
+            },5000)
+            
+            // navigate('/dashboard')
         }else{
             setError({status:true, msg: "All Fields are Required", type:'error'})
         }

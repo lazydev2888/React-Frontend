@@ -1,11 +1,16 @@
+import { Grid } from '@mui/material'
 import React from 'react'
 
 const Home = () => {
   return (
     <>
-      <h1>This is a Homepage</h1>
-      <hr />
-      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim cum corrupti praesentium dicta possimus laboriosam sunt quibusdam repellendus doloremque sint beatae, dolor debitis dolores eligendi quia exercitationem ratione. Nesciunt odit architecto quam, perspiciatis ducimus voluptates libero laborum inventore non, explicabo ratione ipsa itaque recusandae commodi minus eligendi voluptatum. Dolores perferendis reiciendis nostrum? Illum quia atque unde est similique odit voluptatum dolor esse quaerat ipsum, perferendis possimus quos voluptatibus, doloribus fugit magnam quasi qui, sint nam? Magni error consequatur vel, odio, vero saepe at culpa maiores, cumque dolorem illum. Saepe id est officia unde iure aliquid pariatur reiciendis alias nulla quaerat!</p>
+      <Grid container justifyContent='center'>
+        <Grid item sm={10}>
+          <h1>Home Page</h1>
+          <hr />
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias eos maxime consequatur, doloribus cumque qui facere quos debitis dolorum corporis delectus placeat quas aliquam quo! Quod vitae quaerat quo facilis debitis cum ipsum, non quas quisquam maiores, corporis laboriosam dicta reiciendis hic? Ipsum quam ratione totam dolores pariatur magnam molestias veritatis veniam, libero possimus tempora quidem consectetur, cupiditate quis aspernatur consequatur eum quasi at! Perspiciatis similique recusandae molestiae unde fuga accusantium, vero quam adipisci. Quibusdam obcaecati sint ipsam similique nemo, nihil, ipsa perferendis odio mollitia aut, quam cupiditate. Quos, magnam? Similique culpa, nostrum facilis tenetur quaerat possimus hic voluptates commodi.</p>
+        </Grid>
+      </Grid>
     </>
   )
 }
